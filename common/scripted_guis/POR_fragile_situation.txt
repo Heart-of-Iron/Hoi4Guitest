@@ -1,26 +1,22 @@
 scripted_gui = {
-	
+
 	portugal_fragile_situation = {
-	context_type = player_context
-	window_name = "portugal_fragile_situation_gui_window"
-	
-	
-	visible = {
-		has_country_flag = por_test
+		context_type = decision_category
+		window_name = "portugal_fragile_sitation_gui_window"
+		
+		visible = {
+			always = yes
 		}
 		
-	effects = {}
-	
-	properties = {}
-	
-	triggers = {
-		state_beja_visible = {
-			always = yes 
-			}
-			
-		portugal_state_map_visible = {
-			always = yes 
-			}
+		effects = {
+		}
+		
+		properties = {
+		}
+		
+		triggers = {
+			portugal_state_map_visible = { always = yes }
 		}
 	}
+	
 }

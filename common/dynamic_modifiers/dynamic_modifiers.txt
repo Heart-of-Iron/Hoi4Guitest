@@ -1,0 +1,13 @@
+por_insurgency_leanings = {
+	enable = { always = yes  }
+	remove_trigger = {
+		ROOT = { 
+			NOT = {
+				OWNER = {
+					original_tag = POR
+				}
+			} # ROOT refers to the state on which the modifier is added
+		}
+	}
+	icon = GFX_modifiers_ETH_state_decentralization
+}

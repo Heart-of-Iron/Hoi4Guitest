@@ -50,47 +50,47 @@ POR_Fragile_Situation = {
 		days_remove = 7
 		cost = 10
 		
-		remove_effect_tooltip = {
+		remove_effect = {
 			IF = {
-				limit = { has_variable = por_ppi_state }
-				var:por_ppi_state = { remove_dynamic_modifier = {por_insurgency_leanings } }
-				clear_variable = {por_ppi_state}
+				limit = { has_variable = POR_selected_state }
+				var:POR_selected_state = { remove_dynamic_modifier = { modifier = por_insurgency_leanings } }
+				clear_variable = POR_selected_state
 			}
 		}
 	}
-	imminent_infiltration = {
-		priority = 100
-		name = imminent_infiltation_name
-		icon = eng_trade_unions_support
-		available = {
-			hidden_trigger = {always = no}
-		}
-		days_mission_timeout =7
-		fire_only_once = no
-		
-		activation = { always = no}
-		
-		visible = {
-			tag = POR
-			NOT = { has_political_flag = portugese_insurgency}
-		}
-		
-		cancel_if_not_invisible = yes
-		is_good = yes
-		timeout_effect = {
-			random_list = {
-			
-			50 = {
-				modifier = { factor = 2 179 = {NOT = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
-				activate_mission = PPI_increase_control_in_beja
-				}
-			50 = {
-				modifier = { factor = 2 795 = {NOT = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
-				activate_mission = PPI_increase_control_in_santarem
-				}
-			}
-		}
-	}
+	#imminent_infiltration = {
+	#	priority = 100
+	#	name = imminent_infiltation_name
+	#	icon = eng_trade_unions_support
+	#	available = {
+	#		hidden_trigger = {always = no}
+	#	}
+	#	days_mission_timeout =7
+	#	fire_only_once = no
+	#	
+	#	activation = { always = no}
+	#	
+	#	visible = {
+	#		tag = POR
+	#		NOT = { has_global_flag = portugese_insurgency}
+	#	}
+	#	
+	#	cancel_if_not_invisible = yes
+	#	is_good = yes
+	#	timeout_effect = {
+	#		random_list = {
+	#		
+	#		50 = {
+	#			modifier = { factor = 2 179 = {NOT = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
+	#			activate_mission = PPI_increase_control_in_beja
+	#			}
+	#		50 = {
+	#			modifier = { factor = 2 795 = {NOT = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
+	#			activate_mission = PPI_increase_control_in_santarem
+	#			}
+	#		}
+	#	}
+	#}
 	PPI_increase_control_in_beja = {
 		priority = 50
 		name = PPI_increase_control_in_beja_name
@@ -105,15 +105,15 @@ POR_Fragile_Situation = {
 		}
 		visible = {
 			tag = POR
-			NOT = { has_political_flag = portugese_insurgency}
+			NOT = { has_global_flag = portugese_insurgency}
 		}
-		cancel_if_not_invisible = yes
+		#cancel_if_not_invisible = yes
 		is_good = yes
 		timeout_effect = {
 			random_list = {
 			
 			50 = {
-				modifier = { factor = 2 179 = {NOT = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
+				modifier = { factor = 2 179 = { NOT = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
 				activate_mission = PPI_increase_control_in_beja
 				}
 			50 = {
@@ -121,6 +121,7 @@ POR_Fragile_Situation = {
 				activate_mission = PPI_increase_control_in_santarem
 				}
 			}
+			179 = { add_dynamic_modifier = { modifier = por_insurgency_leanings } }
 		}
 	}
 	PPI_increase_control_in_santarem = {
@@ -137,9 +138,9 @@ POR_Fragile_Situation = {
 		}
 		visible = {
 			tag = POR
-			NOT = { has_political_flag = portugese_insurgency}
+			NOT = { has_global_flag = portugese_insurgency}
 		}
-		cancel_if_not_invisible = yes
+		#cancel_if_not_invisible = yes
 		is_good = yes
 		timeout_effect = {
 			random_list = {
@@ -153,6 +154,7 @@ POR_Fragile_Situation = {
 				activate_mission = PPI_increase_control_in_santarem
 				}
 			}
+			795 = { add_dynamic_modifier = { modifier = por_insurgency_leanings } }
 		}
 	}
 }

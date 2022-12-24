@@ -53,7 +53,38 @@ guiTypes = {
 		buttonType = {
 			name ="state_beja"
 			spriteType = "GFX_portugal_state_beja"
-			position = { x=211	 y=96 }
+			position = { x=34	 y=118 }
+		}
+		buttonType = {
+			name ="state_santarem"
+			spriteType = "GFX_portugal_state_santarem"
+			position = { x=38	 y=90 }
+		}
+		buttonType = {
+			name ="state_lisbon"
+			spriteType = "GFX_portugal_state_lisbon"
+			position = { x=23	 y=43 }
+		}
+		buttonType = {
+			name ="state_guarda"
+			spriteType = "GFX_portugal_state_guarda"
+			position = { x=56	 y=42 }
+		}
+		buttonType = {
+			name ="state_porto"
+			spriteType = "GFX_portugal_state_porto"
+			position = { x=41	 y=14 }
+		}
+		
+		buttonType = {
+			name ="state_beja_occupied"
+			spriteType = "GFX_portugal_state_beja_occupied"
+			position = { x=34	 y=118 }
+		}
+		buttonType = {
+			name ="state_santarem_occupied"
+			spriteType = "GFX_portugal_state_santarem_occupied"
+			position = { x=38	 y=90 }
 		}
 	}
 

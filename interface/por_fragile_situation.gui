@@ -2,19 +2,19 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "portugal_fragile_sitation_gui_window"
-		position = { x = 0 y = 0 }
+		position = { x = 0 y = 500 }
 		size = { width = 100% height= 230 }
 		
 		iconType = {
-		name = "portugal_state_map"
-		spriteType = "GFX_portugal_state_map"
-		position = { x = 0	y = 0}
+			name ="portugal_state_map"
+			spriteType = "GFX_portugal_state_map"
+			position = { x=20	 y=-10 }
 		}
-		
 		buttonType = {
-		name = "state_beja"
-		spriteType = "GFX_portugal_state_beja"
-		position = {x = 0	y = 0}
+			name ="state_beja"
+			spriteType = "GFX_portugal_state_beja"
+			position = { x=211	 y=96 }
 		}
 	}
+
 }

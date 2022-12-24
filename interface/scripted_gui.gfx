@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	SpriteType = { 
+		name = "GFX_portugal_state_map"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_map.dds"
+	}
+	SpriteType = { 
+		name = "GFX_portugal_state_beja"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_beja.dds"
+	}
+
+}

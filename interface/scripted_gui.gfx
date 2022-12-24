@@ -8,5 +8,31 @@ spriteTypes = {
 		name = "GFX_portugal_state_beja"
 		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_beja.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_portugal_state_santarem"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_santarem.dds"
+	}
+	SpriteType = {
+		name = "GFX_portugal_state_lisbon"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_lisbon.dds"
+	}
+	SpriteType = {
+		name = "GFX_portugal_state_guarda"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_guarda.dds"
+	}
+	SpriteType = {
+		name = "GFX_portugal_state_porto"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_porto.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_portugal_state_beja_occupied"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_beja_PPI_occupied.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portugal_state_santarem_occupied"
+		texturefile = "gfx/interface/scripted_gui/portugal_fragile/portugal_state_santarem_PPI_occupied.dds"
+	}
 }

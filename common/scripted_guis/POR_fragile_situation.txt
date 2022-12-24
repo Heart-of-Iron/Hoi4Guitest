@@ -9,6 +9,17 @@ scripted_gui = {
 		}
 		
 		effects = {
+		state_beja_click = { set_variable = { POR_selected_state = 179} }
+		state_santarem_click = { set_variable = { POR_selected_state = 795} }
+		state_lisbon_click = { set_variable = { POR_selected_state = 112} }
+		state_guarda_click = { set_variable = { POR_selected_state = 181} }
+		state_porto_click = { set_variable = { POR_selected_state = 180} }
+		
+		#####Occupied
+		state_beja_occupied_click = { set_variable = { POR_selected_state = 179} }
+		state_santarem_occupied_click = { set_variable = { POR_selected_state = 795} }
+		}
+		properties = {
 		}
 		
 		properties = {
@@ -16,7 +27,10 @@ scripted_gui = {
 		
 		triggers = {
 			portugal_state_map_visible = { always = yes }
+			state_beja_occupied_visible = { 179 = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } }
+			state_beja_visible = { NOT = {179 = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
+			state_santarem_occupied_visible = { 795 = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } }
+			state_santarem_visible = { NOT = {795 = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
 		}
-	}
-	
+	}	
 }

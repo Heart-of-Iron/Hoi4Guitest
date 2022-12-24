@@ -32,5 +32,4 @@ scripted_gui = {
 			state_santarem_occupied_visible = { 795 = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } }
 			state_santarem_visible = { NOT = {795 = { has_dynamic_modifier = { modifier = por_insurgency_leanings } } } }
 		}
-	}	
 }
